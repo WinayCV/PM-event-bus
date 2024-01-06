@@ -8,19 +8,22 @@ eventCltr.event = async (req, res) => {
     console.log(event);
 
     await axios
-      .post('http://localhost:5000/events', event)
+      // .post('http://localhost:5000/events', event)
+      .post('https://projects-r5nz.onrender.com', event)
       .catch((err) => {
         console.log(err.message);
       });
 
     await axios
-      .post('http://localhost:5001/events', event)
+      // .post('http://localhost:5001/events', event)
+      .post('https://tasks-r302.onrender.com', event)
       .catch((err) => {
         console.log(err.message);
       });
 
     await axios
-      .post('http://localhost:5002/events', event)
+      // .post('http://localhost:5002/events', event)
+      .post('https://query-u1ze.onrender.com', event)
       .catch((err) => {
         console.log(err.message);
       });
